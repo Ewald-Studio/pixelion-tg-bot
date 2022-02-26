@@ -1,0 +1,28 @@
+env
+
+settings_local.py
+.DS_Store
+*.pyc
+.idea
+
+node_modules/
+dist/
+npm-debug.log
+yarn-error.log
+
+# Editor directories and files
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# webpack.config.js
+
+.vscode
+.code-workspace
+
+package-lock.json
+
+*.tmp
+frontend/webpack.config.js:Zone.Identifier
+docker-compose.yml
