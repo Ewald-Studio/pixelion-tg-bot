@@ -20,8 +20,8 @@ class Command(BaseCommand):
                 request = requests.post(settings.TELEGRAM_URL + "getUpdates", data={ "allowed_updates": ["message"], "offset": last_update_id + 1 })
             data = request.json()
             updates = data["result"]
-            print (updates)
             if len(updates) > 0:
+                print (updates)
                 last_update_id = updates[-1]["update_id"]
                 self.create_recipients(updates)
 
